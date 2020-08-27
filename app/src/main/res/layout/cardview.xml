@@ -9,22 +9,50 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" >
+        tools:layout_editor_absoluteY="1dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="265dp" >
+            android:layout_height="158dp"
+            android:layout_marginTop="20dp">
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="105dp"
-                android:layout_height="61dp"
-                android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginStart="-120dp"
-                app:srcCompat="@drawable/ic_book" />
+            <Button
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="20dp"
+                android:background="@color/colorAccent"
+                android:onClick="onMyButtonClick"
+                android:text="КНИГА"/>
+
+            <Button
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="290dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"
+                android:onClick="onMyButtonClick"
+                android:text="ГДЗ" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Украинский язык"
+                android:textSize="25sp" />
+
         </androidx.cardview.widget.CardView>
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
