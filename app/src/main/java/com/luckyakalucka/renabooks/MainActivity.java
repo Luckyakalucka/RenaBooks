@@ -105,5 +105,24 @@ public class MainActivity<tv1> extends AppCompatActivity {
             startActivity(browserIntent);
         }
 
+
+             if (view.getId() == R.id.tv17) {
+             browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vshkole.com/10-klass/uchebniki/gromadyanska-osvita/tv-bakka-lv-margolina-tv-meleschenko-2018"));
+             startActivity(browserIntent);
+        }
+
+        if (view.getId() == R.id.tv18) {
+            browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://4book.org/uchebniki-ukraina/10-klass/zarubezhnaya-literatura-10-klass-nikolenko-2018"));
+            startActivity(browserIntent);
+        }
+
+        if (view.getId() == R.id.tv19) {
+            browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://4book.org/uchebniki-ukraina/10-klass/russkiy-yazyk-i-literatura-10-klass-davidyuk-2018"));
+            startActivity(browserIntent);
+        }
+        if (view.getId() == R.id.tv20) {
+            browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://4book.org/uchebniki-ukraina/10-klass/zahist-vitchizni-10-klas-gnatyuk-2018"));
+            startActivity(browserIntent);
+        }
     }
 }
