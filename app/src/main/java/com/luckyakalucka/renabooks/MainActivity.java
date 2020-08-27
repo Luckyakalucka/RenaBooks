@@ -91,7 +91,7 @@ public class MainActivity<tv1> extends AppCompatActivity {
         }
 
         if (view.getId() == R.id.tv14) {
-            browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vshkole.com/10-klass/uchebniki/vsesvitnya-istoriya/ov-gisem-oo-martinyuk-2018-profilnij-riven\n"));
+            browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vshkole.com/10-klass/uchebniki/vsesvitnya-istoriya/ov-gisem-oo-martinyuk-2018-profilnij-riven"));
             startActivity(browserIntent);
         }
 

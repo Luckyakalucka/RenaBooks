@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">RenaBook\'s</string>
+    <string name="book">КНИГА</string>
+    <string name="gdz">ГДЗ</string>
+    <string name="ua_lang">Украинский \n Язык</string>
+    <string name="ua_lit">Украинская \n Литература</string>
+    <string name="mathem">Математика</string>
+    <string name="eng_lang">Английский \n Язык</string>
+    <string name="сhemestry">Химия</string>
+    <string name="fuzika">Физика</string>
+    <string name="geografy">География</string>
+    <string name="hyeta">Исскуство</string>
+    <string name="instori_ua">История \n Украины</string>
+    <string name="instory">Всемирная \n История</string>
+    <string name="hyeta_huevaia">Немецкий \n Язык</string>
+    <string name="ne_eby">Гражданское \n Образование</string>
+    <string name="litra">Зарубежная \n Литература</string>
+    <string name="ru_lang">Русский язык и Литература</string>
+    <string name="zashita">Защита \n Отечества</string>
+    <string name="todo">TODO</string>
 </resources>
