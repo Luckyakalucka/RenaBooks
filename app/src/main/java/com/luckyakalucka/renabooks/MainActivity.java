@@ -106,9 +106,9 @@ public class MainActivity<tv1> extends AppCompatActivity {
         }
 
 
-             if (view.getId() == R.id.tv17) {
-             browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vshkole.com/10-klass/uchebniki/gromadyanska-osvita/tv-bakka-lv-margolina-tv-meleschenko-2018"));
-             startActivity(browserIntent);
+        if (view.getId() == R.id.tv17) {
+            browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vshkole.com/10-klass/uchebniki/gromadyanska-osvita/tv-bakka-lv-margolina-tv-meleschenko-2018"));
+            startActivity(browserIntent);
         }
 
         if (view.getId() == R.id.tv18) {
@@ -124,5 +124,7 @@ public class MainActivity<tv1> extends AppCompatActivity {
             browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://4book.org/uchebniki-ukraina/10-klass/zahist-vitchizni-10-klas-gnatyuk-2018"));
             startActivity(browserIntent);
         }
+        Intent intent = new Intent(MainActivity.this, Settings.class);
+        startActivity(intent);
     }
 }

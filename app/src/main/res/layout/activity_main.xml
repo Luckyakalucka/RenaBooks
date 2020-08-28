@@ -6,8 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/yandex_bold"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:text="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:onClick="onMyButtonClick"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+    </LinearLayout>
+
+
+
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -155,6 +187,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="290dp"
                     android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -204,6 +237,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="290dp"
                     android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -253,6 +287,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="290dp"
                     android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
                     android:background="@color/colorAccent"
                     android:fontFamily="@font/yandex_regular"
                     android:onClick="onMyButtonClick"
@@ -446,6 +481,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginStart="290dp"
                     android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"

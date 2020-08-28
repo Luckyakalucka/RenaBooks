@@ -5,11 +5,11 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/laucher"
-        android:roundIcon="@drawable/alfa"
         android:label="@string/app_name"
+        android:roundIcon="@drawable/alfa"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".Settings"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
