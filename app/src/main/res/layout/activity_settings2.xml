@@ -39,7 +39,6 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
-
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
@@ -51,15 +50,62 @@
             android:layout_height="158dp"
             android:id="@+id/cardView">
 
-            <ProgressBar
-                android:id="@+id/progressBar"
-                style="?android:attr/progressBarStyle"
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="Проверить обновления"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    tools:layout_editor_absoluteX="129dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <ImageView
+                    android:id="@+id/ivGit"
+                    android:layout_width="51dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="54dp"
+                    android:onClick="onClick"
+                    android:layout_marginStart="28dp"
+                    app:srcCompat="@drawable/git" />
+
+                <ImageView
+                    android:id="@+id/ivTg"
+                    android:layout_width="51dp"
+                    android:layout_height="51dp"
+                    android:onClick="onClick"
+                    app:srcCompat="@drawable/tg"
+                    android:layout_marginTop="54dp"
+                    android:layout_marginStart="108dp"/>
+
+            <TextView
+                android:id="@+id/tvTg"
                 android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yandex_regular"
+                android:textSize="16sp"
+                android:layout_marginTop="104dp"
+                android:layout_marginStart="104dp"
+                android:text="Telegram" />
+
+            <TextView
+                android:id="@+id/tvGit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="104dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/yandex_regular"
+                android:layout_marginStart="28dp"
+                android:text="GitHub" />
+
+
         </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
