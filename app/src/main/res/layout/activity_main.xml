@@ -25,6 +25,24 @@
             android:text="@string/app_name" />
 
         <ImageButton
+            android:id="@+id/timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:onClick="onMyButtonClick"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_baseline_table_chart_24" />
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:onClick="onMyButtonClick"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_baseline_help_24" />
+
+        <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -32,6 +50,7 @@
             android:onClick="onMyButtonClick"
             android:layout_marginEnd="10dp"
             app:srcCompat="@drawable/ic_baseline_settings_24" />
+
 
     </LinearLayout>
 

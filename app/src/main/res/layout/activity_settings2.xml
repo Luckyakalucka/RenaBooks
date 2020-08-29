@@ -50,6 +50,35 @@
             android:layout_height="158dp"
             android:id="@+id/cardView">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/yandex_bold"
+            android:text="Настройки приложения"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="158dp"
+            android:id="@+id/cardView2">
+
 
                 <TextView
                     android:id="@+id/textView3"
@@ -103,6 +132,9 @@
 
 
         </androidx.cardview.widget.CardView>
+
+
+
 
 
     </LinearLayout>

@@ -35,4 +35,9 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="about">О приложении</string>
+    <string name="a1">Обновление можно проверить \n во вкладке "Настройки", пункт "Проверить обновление"</string>
+    <string name="title_activity_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

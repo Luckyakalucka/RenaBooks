@@ -1,13 +1,12 @@
 package com.luckyakalucka.renabooks;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Bundle;
 import android.net.Uri;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity<tv1> extends AppCompatActivity {
@@ -124,7 +123,19 @@ public class MainActivity<tv1> extends AppCompatActivity {
             browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://4book.org/uchebniki-ukraina/10-klass/zahist-vitchizni-10-klas-gnatyuk-2018"));
             startActivity(browserIntent);
         }
-        Intent intent = new Intent(MainActivity.this, Settings.class);
-        startActivity(intent);
+        if (view.getId() == R.id.imageButton) {
+            Intent intent = new Intent(MainActivity.this, Settings.class);
+            startActivity(intent);
+        }
+        if (view.getId() == R.id.help) {
+                Intent intent = new Intent(MainActivity.this, questions.class);
+            startActivity(intent);
+        }
+        if (view.getId() == R.id.timetable) {
+            Intent intent = new Intent(MainActivity.this, Timetable.class);
+            startActivity(intent);
+        }
+
     }
+
 }
