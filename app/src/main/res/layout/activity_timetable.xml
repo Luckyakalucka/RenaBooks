@@ -7,33 +7,214 @@
     tools:context=".Timetable">
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/yandex_bold"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:textSize="30sp"
+        android:layout_weight="1"
+        android:text="@string/title_activity_settings" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:onClick="onMyButtonClick"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="180dp"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords">
+                </EditText>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="180dp"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="180dp"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/et3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="180dp"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/et4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="180dp"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/et5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="180dp"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/et6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="114dp">
+        android:layout_margin="8dp"
+        android:layout_gravity="center">
 
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/gray"
+            android:layout_width="180dp"
+            android:layout_height="45dp">
+
+            <EditText
+                android:id="@+id/et7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
 
         <Button
             android:id="@+id/btnSave"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save" />
+            android:text="SAVE">
+        </Button>
 
         <Button
             android:id="@+id/btnLoad"
-            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Load" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="229dp"
-            android:layout_height="wrap_content"
-            tools:ignore="MissingConstraints" />
+            android:text="Load">
+        </Button>
 
     </LinearLayout>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
