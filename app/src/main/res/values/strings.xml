@@ -40,4 +40,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="timetable">Расписание</string>
+    <string name="books">Учебники</string>
+    <string name="timetabletime">Звонки</string>
+    <string name="settings">Настройки</string>
 </resources>

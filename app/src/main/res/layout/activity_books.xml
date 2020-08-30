@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BooksActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/yandex_bold"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:text="@string/books" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:onClick="onMyButtonClick"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+            <!-- Украиский язык -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/gray"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/yandex_bold"
+                    android:textColor="@color/black"
+                    android:text="@string/ua_lang"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="108dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/ua_lang" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Украиская литература -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/yandex_bold"
+                    android:textColor="@color/black"
+                    android:text="@string/ua_lit"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="106dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/ua_lit" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Математика -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/yandex_bold"
+                    android:textColor="@color/black"
+                    android:text="@string/mathem"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="106dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/matematika" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Английский язык -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <Button
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/gdz" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/eng_lang"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="107dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/eng" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Химия -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <Button
+                    android:id="@+id/tv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/gdz" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/сhemestry"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/ximiia" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Физика -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <Button
+                    android:id="@+id/tv12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/yandex_regular"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/gdz" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/fuzika"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="106dp"
+                    android:layout_height="163dp"
+                    app:srcCompat="@drawable/fizyka" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- География -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/yandex_bold"
+                    android:textColor="@color/black"
+                    android:text="@string/geografy"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="105dp"
+                    android:layout_height="168dp"
+                    app:srcCompat="@drawable/geografija" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Исскуство -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/hyeta"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="105dp"
+                    android:layout_height="164dp"
+                    app:srcCompat="@drawable/mystectvo" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- История Украины -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/instori_ua"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="105dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/istoriya_ukrainy" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Всемирная История -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/yandex_regular"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/instory"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="105dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/vsesvitnya_istorija" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Немецкий язык -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/tv15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <Button
+                    android:id="@+id/tv16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="290dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/gdz" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/hyeta_huevaia"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="105dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/nimecka_mova"/>
+
+            </androidx.cardview.widget.CardView>
+            <!-- Гражданское Образование -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="105dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/gromadska_osvita" />
+
+                <Button
+                    android:id="@+id/tv17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book" />
+
+                <TextView
+
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginStart="120dp"
+                     android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                     android:text="@string/ne_eby"
+                     android:textSize="25sp" />
+
+        </androidx.cardview.widget.CardView>
+            <!-- Зарубежная литература -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="110dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/main_21234535527" />
+
+                <Button
+                    android:id="@+id/tv18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/litra"
+                    android:textSize="25sp" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Руский язык -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="113dp"
+                    android:layout_height="158dp"
+                    app:srcCompat="@drawable/ru_lang_lit" />
+
+                <Button
+                    android:id="@+id/tv19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="@string/book"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/ru_lang"
+                    android:textSize="25sp" />
+
+            </androidx.cardview.widget.CardView>
+            <!-- Защита Отчечества -->
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/zb" />
+
+                <Button
+                    android:id="@+id/tv20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:fontFamily="@font/yandex_regular"
+                    android:text="@string/book"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/yandex_bold"
+                    android:text="@string/zashita"
+                    android:textSize="25sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
