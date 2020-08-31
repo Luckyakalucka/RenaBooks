@@ -45,8 +45,8 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="409dp"
-            android:layout_height="729dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="1dp"
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -102,7 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -138,7 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -175,24 +175,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
                     android:text="@string/book"/>
 
+
                 <Button
                     android:id="@+id/tv8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginStart="290dp"
-                    android:layout_marginBottom="5dp"
-                    android:fontFamily="@font/yandex_regular"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
                     android:background="@color/colorAccent"
+                    android:fontFamily="@font/yandex_regular"
                     android:onClick="onMyButtonClick"
                     android:text="@string/gdz" />
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -224,7 +223,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -234,9 +233,8 @@
                     android:id="@+id/tv10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginStart="290dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -273,7 +271,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -283,10 +281,8 @@
                     android:id="@+id/tv12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginStart="290dp"
-                    android:layout_marginBottom="5dp"
-
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
                     android:background="@color/colorAccent"
                     android:fontFamily="@font/yandex_regular"
                     android:onClick="onMyButtonClick"
@@ -323,7 +319,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -359,7 +355,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -395,7 +391,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -431,7 +427,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/colorAccent"
                     android:fontFamily="@font/yandex_regular"
                     android:onClick="onMyButtonClick"
@@ -467,7 +463,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -477,9 +473,8 @@
                     android:id="@+id/tv16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginStart="290dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -522,7 +517,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -559,7 +554,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -595,7 +590,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/yandex_regular"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
@@ -631,11 +626,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/colorAccent"
                     android:onClick="onMyButtonClick"
                     android:fontFamily="@font/yandex_regular"
-                    android:text="@string/book"/>
+                    android:text="Книга (М)"/>
+
+                <Button
+                    android:id="@+id/tv21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/yandex_regular"
+                    android:background="@color/colorAccent"
+                    android:onClick="onMyButtonClick"
+                    android:text="КНИГА (Д)" />
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -667,7 +674,6 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
 
 
     </ScrollView>

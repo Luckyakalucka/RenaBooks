@@ -123,6 +123,10 @@ public class BooksActivity<tv1> extends AppCompatActivity {
             browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://4book.org/uchebniki-ukraina/10-klass/zahist-vitchizni-10-klas-gnatyuk-2018"));
             startActivity(browserIntent);
         }
+        if (view.getId() == R.id.tv21) {
+            browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://4book.org/uchebniki-ukraina/10-klass/zahist-vitchizni-10-klas-gudima-2018"));
+            startActivity(browserIntent);
+        }
         if (view.getId() == R.id.home) {
             Intent intent = new Intent(BooksActivity.this, MainActivity.class);
             startActivity(intent);
