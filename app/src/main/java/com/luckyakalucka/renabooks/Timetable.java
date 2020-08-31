@@ -14,10 +14,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Timetable extends AppCompatActivity implements View.OnClickListener {
 
 
-    EditText et1, et2, et3, et4, et5, et6, et7;
+    EditText et1, et2, et3, et4, et5, et6, et7, date;
     Button btnSave, btnLoad;
     SharedPreferences sPref;
 
+    final String SAVED_DATE = "saved_date";
     final String SAVED_TEXT1 = "saved_text1";
     final String SAVED_TEXT2 = "saved_text2";
     final String SAVED_TEXT3 = "saved_text3";
@@ -39,6 +40,7 @@ public class Timetable extends AppCompatActivity implements View.OnClickListener
         et5 = (EditText) findViewById(R.id.et5);
         et6 = (EditText) findViewById(R.id.et6);
         et7 = (EditText) findViewById(R.id.et7);
+        date = (EditText) findViewById(R.id.date);
         btnSave = (Button) findViewById(R.id.btnSave);
         btnSave.setOnClickListener(this);
         btnLoad = (Button) findViewById(R.id.btnLoad);
@@ -81,8 +83,8 @@ public class Timetable extends AppCompatActivity implements View.OnClickListener
         et6.setText(savedText6);
         String savedText7 = sPref.getString(SAVED_TEXT7, "");
         et7.setText(savedText7);
-
-         Toast.makeText(Timetable.this, "Text loaded", Toast.LENGTH_SHORT).show();
+        String DATE = sPref.getString(SAVED_DATE, "");
+        date.setText(DATE);
       }
 
 
@@ -97,9 +99,25 @@ public class Timetable extends AppCompatActivity implements View.OnClickListener
           ed.putString(SAVED_TEXT5, et5.getText().toString());
           ed.putString(SAVED_TEXT6, et6.getText().toString());
           ed.putString(SAVED_TEXT7, et7.getText().toString());
+          ed.putString(SAVED_DATE, date.getText().toString());
           ed.commit();
-        Toast.makeText(Timetable.this, "Text saved", Toast.LENGTH_SHORT).show();
+        Toast.makeText(Timetable.this, "Расписание сохранено!", Toast.LENGTH_SHORT).show();
       }
+
+    private void saveTextWithoutToast() {
+        sPref = getSharedPreferences("MyPref1", MODE_PRIVATE);
+        SharedPreferences.Editor ed = sPref.edit();
+        ed.putString(SAVED_TEXT1, et1.getText().toString());
+        ed.putString(SAVED_TEXT2, et2.getText().toString());
+        ed.putString(SAVED_TEXT3, et3.getText().toString());
+        ed.putString(SAVED_TEXT4, et4.getText().toString());
+        ed.putString(SAVED_TEXT5, et5.getText().toString());
+        ed.putString(SAVED_TEXT6, et6.getText().toString());
+        ed.putString(SAVED_TEXT7, et7.getText().toString());
+        ed.putString(SAVED_DATE, date.getText().toString());
+        ed.commit();
+    }
+
 
 
 
@@ -113,7 +131,7 @@ public class Timetable extends AppCompatActivity implements View.OnClickListener
       @Override
       protected void onDestroy() {
          super.onDestroy();
-         saveText();
+         saveTextWithoutToast();
       }
 }
 
