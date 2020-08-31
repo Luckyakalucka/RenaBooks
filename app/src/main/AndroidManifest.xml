@@ -9,18 +9,23 @@
         android:roundIcon="@drawable/alfa"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TimetableFriday"></activity>
+        <activity android:name=".TimetableThursday" />
+        <activity android:name=".TimetableWednesday" />
+        <activity android:name=".TimetableTuesday" />
+        <activity android:name=".TimetableMonday" />
+        <activity android:name=".TimetableTime" />
         <activity android:name=".MainActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Timetable" />
         <activity android:name=".questions" />
         <activity android:name=".Settings" />
-        <activity android:name=".BooksActivity">
-        </activity>
+        <activity android:name=".BooksActivity" />
     </application>
 
 </manifest>

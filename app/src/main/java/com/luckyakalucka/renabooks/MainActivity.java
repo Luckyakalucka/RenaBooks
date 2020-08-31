@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         if (view.getId() == R.id.timetabletime) {
-            Intent intent = new Intent(MainActivity.this, BooksActivity.class);
+            Intent intent = new Intent(MainActivity.this, TimetableTime.class);
             startActivity(intent);
         }
         if (view.getId() == R.id.settings) {

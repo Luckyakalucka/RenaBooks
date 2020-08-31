@@ -44,7 +44,7 @@
     <string name="books">Учебники</string>
     <string name="timetabletime">Звонки</string>
     <string name="settings">Настройки</string>
-    <string name="date">День Недели</string>
+    <string name="date">Число</string>
     <string name="predmet1">Урок 1</string>
     <string name="predmet2">Урок 2</string>
     <string name="predmet3">Урок 3</string>
@@ -52,4 +52,9 @@
     <string name="predmet5">Урок 5</string>
     <string name="predmet6">Урок 6</string>
     <string name="predmet7">Урок 7</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
 </resources>
