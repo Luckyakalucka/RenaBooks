@@ -52,8 +52,6 @@ public class TimetableWednesday extends AppCompatActivity implements View.OnClic
 
 
         loadText();
-
-
     }
 
     private void loadDef() {
@@ -65,7 +63,6 @@ public class TimetableWednesday extends AppCompatActivity implements View.OnClic
         et6.setText(R.string.wednesday6);
         et7.setText(R.string.wednesday7);
         date.setText("");
-
     }
 
     private void clear() {
@@ -79,8 +76,6 @@ public class TimetableWednesday extends AppCompatActivity implements View.OnClic
         date.setText("");
 
     }
-
-
 
     @Override
     public void onClick(View v) {
@@ -122,8 +117,6 @@ public class TimetableWednesday extends AppCompatActivity implements View.OnClic
         date.setText(DATE);
     }
 
-
-
     private void saveText() {
         sPref = getSharedPreferences("MyPref1", MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
@@ -152,10 +145,7 @@ public class TimetableWednesday extends AppCompatActivity implements View.OnClic
         ed.putString(SAVED_DATE_WEDNESDAY, date.getText().toString());
         ed.commit();
     }
-
-
-
-
+    
     public void onMyButtonClick(View view) {
         if (view.getId() == R.id.back) {
             Intent intent = new Intent(TimetableWednesday.this, Timetable.class);

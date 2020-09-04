@@ -14,10 +14,7 @@ public class Timetable extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timetable);
-
-
     }
-
 
     public void onMyButtonClick(View view) {
         if (view.getId() == R.id.home) {
@@ -45,6 +42,6 @@ public class Timetable extends AppCompatActivity {
             startActivity(intent);
         }
     }
-    }
+}
 
 

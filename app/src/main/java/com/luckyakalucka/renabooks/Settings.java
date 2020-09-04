@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Settings extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +18,6 @@ public class Settings extends AppCompatActivity {
         
         TextView tvTg = (TextView) findViewById(R.id.tvTg);
         Switch switch2 = (Switch) findViewById(R.id.switch2);
-
-
     }
 
     Intent browserIntent;
@@ -38,13 +35,10 @@ public class Settings extends AppCompatActivity {
         }
     }
 
-
     public void onMyButtonClick(View view) {
         if (view.getId() == R.id.home) {
             Intent intent = new Intent(Settings.this, MainActivity.class);
             startActivity(intent);
         }
-
-
-        }
-    }
+     }
+}

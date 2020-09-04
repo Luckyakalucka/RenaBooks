@@ -16,7 +16,7 @@ public class questions extends AppCompatActivity {
 
     public void onMyButtonClick(View view) {
         if (view.getId() == R.id.home) {
-            Intent intent = new Intent(questions.this, BooksActivity.class);
+            Intent intent = new Intent(questions.this, MainActivity.class);
             startActivity(intent);
         }
     }

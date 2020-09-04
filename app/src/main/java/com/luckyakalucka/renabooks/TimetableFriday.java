@@ -50,10 +50,7 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
         btnClear = (Button) findViewById(R.id.btnClear);
         btnClear.setOnClickListener(this);
 
-
         loadText();
-
-
     }
 
     private void loadDef() {
@@ -65,7 +62,6 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
         et6.setText(R.string.friday6);
         et7.setText(R.string.friday7);
         date.setText("");
-
     }
 
     private void clear() {
@@ -77,7 +73,6 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
         et6.setText("");
         et7.setText("");
         date.setText("");
-
     }
 
 
@@ -100,7 +95,6 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-
     private void loadText() {
         sPref = getSharedPreferences("MyPref1", MODE_PRIVATE);
         String savedText1 = sPref.getString(SAVED_TEXT1_FRIDAY, "");
@@ -120,8 +114,6 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
         String DATE = sPref.getString(SAVED_DATE_FRIDAY, "");
         date.setText(DATE);
     }
-
-
 
     private void saveText() {
         sPref = getSharedPreferences("MyPref1", MODE_PRIVATE);
@@ -151,9 +143,6 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
         ed.putString(SAVED_DATE_FRIDAY, date.getText().toString());
         ed.commit();
     }
-
-
-
 
     public void onMyButtonClick(View view) {
         if (view.getId() == R.id.back) {
