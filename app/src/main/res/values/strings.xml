@@ -57,4 +57,45 @@
     <string name="wednesday">Среда</string>
     <string name="thursday">Четверг</string>
     <string name="friday">Пятница</string>
+
+    <string name="monday1">Понедельник 1</string>
+    <string name="monday2">Понедельник 2</string>
+    <string name="monday3">Понедельник 3</string>
+    <string name="monday4">Понедельник 4</string>
+    <string name="monday5">Понедельник 5</string>
+    <string name="monday6">Понедельник 6</string>
+    <string name="monday7">Понедельник 7</string>
+
+    <string name="tuesday1">Фторник 1</string>
+    <string name="tuesday2">Фторник 2</string>
+    <string name="tuesday3">Фторник 3</string>
+    <string name="tuesday4">Фторник 4</string>
+    <string name="tuesday5">Фторник 5</string>
+    <string name="tuesday6">Фторник 6</string>
+    <string name="tuesday7">Фторник 7</string>
+
+    <string name="wednesday1">Среда 1</string>
+    <string name="wednesday2">Среда 2</string>
+    <string name="wednesday3">Среда 3</string>
+    <string name="wednesday4">Среда 4</string>
+    <string name="wednesday5">Среда 5</string>
+    <string name="wednesday6">Среда 6</string>
+    <string name="wednesday7">Среда 7</string>
+
+    <string name="thursday1">Четверг 1</string>
+    <string name="thursday2">Четверг 2</string>
+    <string name="thursday3">Четверг 3</string>
+    <string name="thursday4">Четверг 4</string>
+    <string name="thursday5">Четверг 5</string>
+    <string name="thursday6">Четверг 6</string>
+    <string name="thursday7">Четверг 7</string>
+
+    <string name="friday1">Пятница 1</string>
+    <string name="friday2">Пятница 2</string>
+    <string name="friday3">Пятница 3</string>
+    <string name="friday4">Пятница 4</string>
+    <string name="friday5">Пятница 5</string>
+    <string name="friday6">Пятница 6</string>
+    <string name="friday7">Пятница 7</string>
+
 </resources>

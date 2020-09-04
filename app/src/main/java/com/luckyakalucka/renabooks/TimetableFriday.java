@@ -15,7 +15,7 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
 
 
     EditText et1, et2, et3, et4, et5, et6, et7, date;
-    Button btnSave, btnLoad;
+    Button btnSave, btnLoad, btnDef, btnClear;
     SharedPreferences sPref;
 
     final String SAVED_DATE_FRIDAY = "saved_date_friday";
@@ -45,9 +45,38 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
         btnSave.setOnClickListener(this);
         btnLoad = (Button) findViewById(R.id.btnLoad);
         btnLoad.setOnClickListener(this);
+        btnDef = (Button) findViewById(R.id.btnDef);
+        btnDef.setOnClickListener(this);
+        btnClear = (Button) findViewById(R.id.btnClear);
+        btnClear.setOnClickListener(this);
+
 
         loadText();
 
+
+    }
+
+    private void loadDef() {
+        et1.setText(R.string.friday1);
+        et2.setText(R.string.friday2);
+        et3.setText(R.string.friday3);
+        et4.setText(R.string.friday4);
+        et5.setText(R.string.friday5);
+        et6.setText(R.string.friday6);
+        et7.setText(R.string.friday7);
+        date.setText("");
+
+    }
+
+    private void clear() {
+        et1.setText("");
+        et2.setText("");
+        et3.setText("");
+        et4.setText("");
+        et5.setText("");
+        et6.setText("");
+        et7.setText("");
+        date.setText("");
 
     }
 
@@ -61,6 +90,11 @@ public class TimetableFriday extends AppCompatActivity implements View.OnClickLi
             case R.id.btnLoad:
                 loadText();
                 break;
+            case R.id.btnDef:
+                loadDef();
+                break;
+            case R.id.btnClear:
+                clear();
             default:
                 break;
         }
